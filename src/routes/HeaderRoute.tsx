@@ -5,7 +5,7 @@ import { HeaderApp } from '../apps/HeaderApp';
 export const HeaderRoute: React.FC = () => {
   return (
     <Routes>
-      <Route path='/' element={<HeaderApp />} />
+      <Route path='/portfolio' element={<HeaderApp />} />
     </Routes>
   );
 };

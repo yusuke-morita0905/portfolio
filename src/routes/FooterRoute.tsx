@@ -5,7 +5,7 @@ import { FooterApp } from '../apps/FooterApp'
 export const FooterRoute: React.FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<FooterApp />} />
+      <Route path="/portfolio" element={<FooterApp />} />
     </Routes>
   );
 };

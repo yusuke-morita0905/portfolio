@@ -5,7 +5,7 @@ import { HomeApp } from '../apps/HomeApp'
 export const MainRoute: React.FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomeApp />} />
+      <Route path="/portfolio" element={<HomeApp />} />
     </Routes>
   );
 };
