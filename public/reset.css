@@ -10,6 +10,7 @@
   box-sizing: border-box;
   background-repeat: no-repeat;
   font-style: inherit;
+  font-weight: normal;
 }
 
 *::after,
@@ -20,7 +21,7 @@
 
 body {
   line-height: 1;
-  font-family: Helvetica Neue, Helvetica, Hiragino Sans, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, 'メイリオ', Meiryo, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -webkit-font-size-adjust: 100%;

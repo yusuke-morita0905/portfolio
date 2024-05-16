@@ -13,5 +13,4 @@ export const HomeComp: React.FC<Props> = (p) => {
   );
 };
 
-const Container = styled.div`
-`;
+const Container = styled.div``;

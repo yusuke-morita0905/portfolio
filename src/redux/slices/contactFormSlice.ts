@@ -1,11 +1,11 @@
-import { createAsyncThunk, createSlice, PayloadAction, SerializedError } from "@reduxjs/toolkit";
+import {  createSlice } from "@reduxjs/toolkit";
 
 interface State {
   email: string
 }
 
 const initialState: State = {
-  email: '',
+  email: 'yusuke.morita0905@gmail.com',
 };
 
 export const contactFormSlice = createSlice({

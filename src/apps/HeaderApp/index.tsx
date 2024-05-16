@@ -1,13 +1,48 @@
 import React, { useState } from 'react';
-import { useAppSelector } from '../../redux/store';
+import { mediaQuery, useMediaQuery, bgPath, ShowImage } from '../../modules/lib';
 import { HeaderComp } from '../../comps/headers/HeaderComp';
+import { NavComp } from '../../comps/headers/NavComp';
+import { FirstViewComp } from '../../comps/headers/FirstViewComp';
+
+type nav = {
+  item: {
+    cd: string;
+    title: string;
+    link: string;
+  };
+}[];
+
+const Nav: nav = [
+  {
+    item: {
+      cd: '1',
+      title: 'Works',
+      link: 'works',
+    },
+  },
+  {
+    item: {
+      cd: '2',
+      title: 'About',
+      link: 'about',
+    },
+  },
+  {
+    item: {
+      cd: '3',
+      title: 'Contact',
+      link: 'contact',
+    },
+  },
+];
 
 export const HeaderApp: React.FC = () => {
-  const d = useAppSelector((state) => state.header);
+  const isSp:boolean = useMediaQuery(mediaQuery.sp);
 
   return (
-    <HeaderComp>
-      <>header</>
+    <HeaderComp isSp={isSp}>
+      <NavComp nav={Nav} isSp={isSp}/>
+      <FirstViewComp mainText="Morita Yusuke's Portfolio" isSp={isSp} />
     </HeaderComp>
   );
 };

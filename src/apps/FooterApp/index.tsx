@@ -1,13 +1,14 @@
 import React from 'react';
-import { useAppSelector } from '../../redux/store';
+import { mediaQuery, useMediaQuery, bgPath, ShowImage } from '../../modules/lib';
 import { FooterComp } from '../../comps/footers/FooterComp';
+import { CopyrightComp } from '../../comps/footers/CopyrightComp';
 
 export const FooterApp: React.FC = () => {
-  const d = useAppSelector((state) => state.footer);
+  const isSp:boolean = useMediaQuery(mediaQuery.sp);
 
   return (
-    <FooterComp>
-      <>footer</>
+    <FooterComp isSp={isSp}>
+      <CopyrightComp isSp={isSp}/>
     </FooterComp>
   );
 };
