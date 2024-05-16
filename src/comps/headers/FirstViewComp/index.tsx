@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { mediaQuery, useMediaQuery, bgPath, ShowImage } from '../../../modules/lib';
 
 type Props = {
   mainText: string;

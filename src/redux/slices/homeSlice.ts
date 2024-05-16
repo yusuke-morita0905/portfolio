@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, PayloadAction, SerializedError } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 interface State {
   works: {

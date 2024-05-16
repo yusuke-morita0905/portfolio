@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { mediaQuery, useMediaQuery, bgPath, ShowImage } from '../../../modules/lib';
+import { ShowImage } from '../../../modules/lib';
 
 type Props = {
   works: {
@@ -112,6 +112,19 @@ const ImageBlock = styled.div<{ $isSp: boolean }>`
   overflow: hidden;
   border-radius: 0.6rem;
   margin-bottom: ${(p) => (p.$isSp ? '4vw' : '0.8vw')};
+
+  ${(p) => {
+    if (p.$isSp) {
+      return css`
+        img {
+          transition: all 0.5s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      `;
+    }
+  }}
 `;
 
 const Caption = styled.div<{ $isSp: boolean }>``;
