@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-const srcPass: string = '/img/';
+const srcPass: string = '/portfolio/img/';
 
 type Image = {
   srcName: string; 
