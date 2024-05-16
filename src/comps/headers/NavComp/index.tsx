@@ -56,7 +56,7 @@ const Item = styled.li<{ $isSp: boolean }>`
   position: relative;
 
   ${(p) => {
-    if (p.$isSp) {
+    if (!p.$isSp) {
       return css`
         &::after {
           content: '';

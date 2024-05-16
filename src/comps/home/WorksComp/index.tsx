@@ -114,7 +114,7 @@ const ImageBlock = styled.div<{ $isSp: boolean }>`
   margin-bottom: ${(p) => (p.$isSp ? '4vw' : '0.8vw')};
 
   ${(p) => {
-    if (p.$isSp) {
+    if (!p.$isSp) {
       return css`
         img {
           transition: all 0.5s;
