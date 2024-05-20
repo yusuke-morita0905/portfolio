@@ -82,6 +82,5 @@ const Loader = styled.div<{ $isSp: boolean }>`
   border: ${p => p.$isSp ? '3vw' : '0.4vw'} solid rgba(0, 0, 0, 0.1);
   border-top-color: #ffb6c1;
   animation: ${rotate} 2s linear infinite;
-  top: ${(p) => (p.$isSp ? '0' : '26vw')};
-  ${p => p.$isSp ? 'bottom: 0' : ''};
+  top: ${(p) => (p.$isSp ? 'calc(2900vw / 37.5)' : 'calc(900vw / 37.5)')};
 `;
