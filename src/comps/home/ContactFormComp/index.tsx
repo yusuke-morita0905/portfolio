@@ -29,11 +29,10 @@ const Container = styled.div<{ $isSp: boolean }>`
   width: ${(p) => (p.$isSp ? '90vw' : '66vw')};
   margin-left: auto;
   margin-right: auto;
-  padding: 12vw 0 8vw;
 `;
 
 const Title = styled.h2<{ $isSp: boolean }>`
-  font-size: ${(p) => (p.$isSp ? '4.3vw' : '2vw')};
+  font-size: ${(p) => (p.$isSp ? 'calc(20vw / 3.75)' : 'calc(40vw / 19.2)')};
   text-align: center;
   font-family: 'Inter', sans-serif;
   position: relative;
@@ -57,16 +56,16 @@ const Title = styled.h2<{ $isSp: boolean }>`
     margin: auto;
     right: 0;
     top: ${(p) => (p.$isSp ? '1.5vw' : '1vw')};
-    margin-left: ${(p) => (p.$isSp ? '12vw' : '3vw')};
-    transform: rotate(-10deg);
+    margin-left: ${(p) => (p.$isSp ? '16vw' : '3vw')};
+    transform: rotate(10deg);
   }
 `;
 
 const Input = styled.input<{ $isSp: boolean }>`
-  width: ${(p) => (p.$isSp ? '50vw' : '18vw')};
+  width: ${(p) => (p.$isSp ? 'calc(2450vw / 37.5)' : 'calc(400vw / 19.2)')};
   display: block;
-  margin: 0 auto;
-  font-size: ${(p) => (p.$isSp ? '3vw' : '1.1vw')};
+  margin: 0 auto ${(p) => (p.$isSp ? 'calc(400vw / 37.5)' : 'calc(100vw / 19.2)')};;
+  font-size: ${(p) => (p.$isSp ? 'calc(16vw / 3.75)' : 'calc(25vw / 19.2)')};
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-weight: 400;

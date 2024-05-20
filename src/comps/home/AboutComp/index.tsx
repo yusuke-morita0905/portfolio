@@ -25,6 +25,8 @@ export const AboutComp: React.FC<Props> = (p) => {
 
 const Container = styled.section<{ $isSp: boolean }>`
   position: relative;
+  padding: ${(p) => (p.$isSp ? 'calc(360vw / 37.5) 0 calc(600vw / 37.5)' : 'calc(80vw / 19.2) 0 calc(150vw / 19.2)')};
+  margin-bottom: ${p => p.$isSp ? 'calc(700vw / 37.5)' : 'calc(300vw / 19.2)'};
 
   &::before {
     content: '';
@@ -33,7 +35,7 @@ const Container = styled.section<{ $isSp: boolean }>`
     top: 1vw;
     left: 0;
     width: 100%;
-    height: ${(p) => (p.$isSp ? '100vw' : '36vw')};
+    height: 100%;
     background-color: #afeeee;
     z-index: -1;
     transform: skewY(10deg);
@@ -44,11 +46,10 @@ const Container = styled.section<{ $isSp: boolean }>`
 const Wrap = styled.div<{ $isSp: boolean }>`
   width: ${(p) => (p.$isSp ? '90vw' : '43vw')};
   margin: 0 auto;
-  padding: 8vw 0 ${(p) => (p.$isSp ? '22vw' : '12vw')};
 `;
 
 const Title = styled.h2<{ $isSp: boolean }>`
-  font-size: ${(p) => (p.$isSp ? '4.3vw' : '2vw')};
+  font-size: ${(p) => (p.$isSp ? 'calc(20vw / 3.75)' : 'calc(40vw / 19.2)')};
   text-align: center;
   font-family: 'Inter', sans-serif;
   position: relative;
@@ -72,14 +73,14 @@ const Title = styled.h2<{ $isSp: boolean }>`
     margin: auto;
     right: 0;
     top: ${(p) => (p.$isSp ? '1.5vw' : '1vw')};
-    margin-right: ${(p) => (p.$isSp ? '9vw' : '3vw')};
+    margin-right: ${(p) => (p.$isSp ? '11vw' : '3vw')};
     transform: rotate(10deg);
   }
 `;
 
 const About = styled.div<{ $isSp: boolean }>`
   p {
-    font-size: ${(p) => (p.$isSp ? '3.2vw' : '0.93vw')};
+    font-size: ${(p) => (p.$isSp ? 'calc(12vw / 3.75)' : 'calc(20vw / 19.2)')};
     line-height: ${(p) => (p.$isSp ? '2' : '1.8')};
 
     &:not(:last-child) {

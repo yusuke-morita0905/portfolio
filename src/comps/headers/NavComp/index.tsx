@@ -49,7 +49,7 @@ const List = styled.ul<{ $isSp: boolean }>`
   display: flex;
   justify-content: center;
   gap: ${(p) => (p.$isSp ? '5vw' : '1.5vw')};
-  font-size: ${(p) => (p.$isSp ? '2.8vw' : '1.1vw')};
+  font-size: ${(p) => (p.$isSp ? 'calc(10vw / 3.75)' : 'calc(20vw / 19.2)')};
 `;
 
 const Item = styled.li<{ $isSp: boolean }>`

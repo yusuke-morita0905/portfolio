@@ -67,7 +67,7 @@ const Container = styled.div<{ $isSp: boolean }>`
 `;
 
 const Title = styled.h2<{ $isSp: boolean }>`
-  font-size: ${(p) => (p.$isSp ? '4.3vw' : '2vw')};
+  font-size: ${(p) => (p.$isSp ? 'calc(20vw / 3.75)' : 'calc(40vw / 19.2)')};
   text-align: center;
   font-family: 'Inter', sans-serif;
   position: relative;
@@ -91,7 +91,7 @@ const Title = styled.h2<{ $isSp: boolean }>`
     margin: auto;
     right: 0;
     top: ${(p) => (p.$isSp ? '1.5vw' : '1vw')};
-    margin-left: ${(p) => (p.$isSp ? '9vw' : '3vw')};
+    margin-left: ${(p) => (p.$isSp ? '12vw' : '3vw')};
     transform: rotate(10deg);
   }
 `;
@@ -130,7 +130,7 @@ const ImageBlock = styled.div<{ $isSp: boolean }>`
 const Caption = styled.div<{ $isSp: boolean }>``;
 
 const CaptionTitle = styled.h3<{ $isSp: boolean }>`
-  font-size: ${(p) => (p.$isSp ? '3.2vw' : '1.05vw ')};
+  font-size: ${(p) => (p.$isSp ? 'calc(16vw / 3.75)' : 'calc(23vw / 19.2)')};
   margin-bottom: ${(p) => (p.$isSp ? '3.3vw' : '0.8vw')};
   line-height: 1.4;
   font-weight: 500;
@@ -138,5 +138,5 @@ const CaptionTitle = styled.h3<{ $isSp: boolean }>`
 `;
 
 const CaptionText = styled.div<{ $isSp: boolean }>`
-  font-size: ${(p) => (p.$isSp ? '2.3vw' : '0.82vw')};
+  font-size: ${(p) => (p.$isSp ? 'calc(12vw / 3.75)' : 'calc(18vw / 19.2)')};
 `;
