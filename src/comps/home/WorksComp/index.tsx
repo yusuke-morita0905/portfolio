@@ -59,7 +59,7 @@ export const WorksComp: React.FC<Props> = (p) => {
   );
 };
 
-const Container = styled.div<{ $isSp: boolean }>`
+const Container = styled.section<{ $isSp: boolean }>`
   width: ${(p) => (p.$isSp ? '90vw' : '66vw')};
   margin-left: auto;
   margin-right: auto;
