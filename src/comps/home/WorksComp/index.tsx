@@ -7,7 +7,8 @@ type Props = {
     cd: string;
     link: string;
     title: string;
-    text: string;
+    development: string;
+    rep: string;
     image: {
       srcName: string;
       ext: 'jpg' | 'png' | 'svg';
@@ -48,7 +49,10 @@ export const WorksComp: React.FC<Props> = (p) => {
               <Caption $isSp={isSp}>
                 <CaptionTitle $isSp={isSp}>{v.title}</CaptionTitle>
                 <CaptionText $isSp={isSp}>
-                  <p>{v.text}</p>
+                  <p>開発環境 : {v.development}</p>
+                </CaptionText>
+                <CaptionText $isSp={isSp}>
+                  <p>担当業務 : {v.rep}</p>
                 </CaptionText>
               </Caption>
             </a>
@@ -139,4 +143,6 @@ const CaptionTitle = styled.h3<{ $isSp: boolean }>`
 
 const CaptionText = styled.div<{ $isSp: boolean }>`
   font-size: ${(p) => (p.$isSp ? 'calc(12vw / 3.75)' : 'calc(18vw / 19.2)')};
+  line-height: 2;
+  letter-spacing: 0.03vw;
 `;

@@ -5,7 +5,8 @@ interface State {
     cd: string;
     link: string;
     title: string;
-    text: string;
+    development: string;
+    rep: string;
     image: {
       srcName: string;
       ext: 'jpg' | 'png' | 'svg';
@@ -20,8 +21,9 @@ const initialState: State = {
     {
       cd: '1',
       link: 'https://iekon.jp/',
-      title: 'イエコン 不動産の売却コンシェルジュ',
-      text: 'テーマ作成、プラグイン作成、フロントエンド、マークアップ',
+      title: '空き家・訳あり物件の買取業者探しならイエコン',
+      development: 'React.js Typescript Express.js webpack',
+      rep: 'フロントエンド マークアップ',
       image: {
         srcName: 'works1',
         ext: 'png',
@@ -32,7 +34,8 @@ const initialState: State = {
       cd: '2',
       link: 'https://artmake-more.jp/',
       title: 'アートメイクモア 医療アートメイクの施術ができるクリニックを探せる・予約できる',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works2',
         ext: 'png',
@@ -43,7 +46,8 @@ const initialState: State = {
       cd: '3',
       link: 'https://c-partners.jp/',
       title: '株式会社クランピー＆パートナーズ',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works3',
         ext: 'png',
@@ -54,7 +58,8 @@ const initialState: State = {
       cd: '4',
       link: 'https://c-realestate.jp/lp/wakeari/',
       title: '訳あり物件買取窓口',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works4',
         ext: 'png',
@@ -65,7 +70,8 @@ const initialState: State = {
       cd: '5',
       link: 'https://c-realestate.jp/lp/saikenfuka/',
       title: '再建築不可物件の買取',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works5',
         ext: 'png',
@@ -76,7 +82,8 @@ const initialState: State = {
       cd: '6',
       link: 'https://mochibun-kyokasho.com/',
       title: '訳あり物件買取窓口',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works6',
         ext: 'png',
@@ -87,7 +94,8 @@ const initialState: State = {
       cd: '7',
       link: 'https://fairyartmake.com/',
       title: 'アートメイク専門のナチュラルアートメイク東京',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works7',
         ext: 'png',
@@ -98,7 +106,8 @@ const initialState: State = {
       cd: '8',
       link: 'https://as-cl-artmake.com/',
       title: 'あいち栄クリニック アートメイク',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works8',
         ext: 'png',
@@ -109,7 +118,8 @@ const initialState: State = {
       cd: '9',
       link: 'https://mensdatumo-dandyism.com/',
       title: 'メンズ脱毛サロン・クリニック人気ランキング',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works9',
         ext: 'png',
@@ -120,7 +130,8 @@ const initialState: State = {
       cd: '10',
       link: 'https://taurus-financial.com/',
       title: '行政書士トーラス総合法務事務所トーラス・フィナンシャルコンサルティング株式会社',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works10',
         ext: 'png',
@@ -131,7 +142,8 @@ const initialState: State = {
       cd: '11',
       link: 'https://law-pal.com/',
       title: '力新堂法律事務所',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works11',
         ext: 'png',
@@ -142,7 +154,8 @@ const initialState: State = {
       cd: '12',
       link: 'https://www.mc-law.jp/',
       title: '弁護士法人みずほ中央法律事務所・司法書士法人みずほ中央事務所',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works12',
         ext: 'png',
@@ -153,7 +166,8 @@ const initialState: State = {
       cd: '13',
       link: 'https://awazalaw-rikon.com/',
       title: 'あわざ総合法律事務所',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works13',
         ext: 'png',
@@ -164,7 +178,8 @@ const initialState: State = {
       cd: '14',
       link: 'https://sozoku-tako-law.com/',
       title: '弁護士法人多湖総合法律事務所',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works14',
         ext: 'png',
@@ -175,7 +190,8 @@ const initialState: State = {
       cd: '15',
       link: 'https://souzoku-utsunomiya-higashi.com/',
       title: '弁護士法人宇都宮東法律事務所(相続専門サイト)',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works15',
         ext: 'png',
@@ -186,7 +202,8 @@ const initialState: State = {
       cd: '16',
       link: 'https://kotsujiko-utsunomiya-higashi.com/',
       title: '弁護士法人宇都宮東法律事務所(交通事故専門サイト)',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works16',
         ext: 'png',
@@ -197,7 +214,8 @@ const initialState: State = {
       cd: '17',
       link: 'https://kawaisogo-kotsujiko.com/',
       title: '河合総合法律事務所',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works17',
         ext: 'png',
@@ -208,7 +226,8 @@ const initialState: State = {
       cd: '18',
       link: 'https://jikoshizuoka-greenlaw.com/',
       title: '弁護士法人コールグリーン浜松オフィス',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works18',
         ext: 'png',
@@ -219,7 +238,8 @@ const initialState: State = {
       cd: '19',
       link: 'https://yopi-saimu.com/',
       title: '弁護士法人よぴ法律会計事務所',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works19',
         ext: 'png',
@@ -230,7 +250,8 @@ const initialState: State = {
       cd: '20',
       link: 'https://kaitoru-info.com/',
       title: 'カイトル 着物買取業者ランキング',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works20',
         ext: 'png',
@@ -241,7 +262,8 @@ const initialState: State = {
       cd: '21',
       link: 'https://jobplace-kango.com/',
       title: 'JOB PLACE 看護士転職 看護士転職おすすめランキング',
-      text: 'テーマ作成、フロントエンド、マークアップ',
+      development: 'WordPress PHP Javascript HTML5 Sass gulp',
+      rep: 'テーマ作成 フロントエンド マークアップ',
       image: {
         srcName: 'works21',
         ext: 'png',
