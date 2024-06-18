@@ -1,5 +1,5 @@
 import React from 'react';
-import { mediaQuery, useMediaQuery, bgPath, ShowImage } from '../../modules/lib';
+import { mediaQuery, useMediaQuery } from '../../modules/lib';
 import { FooterComp } from '../../comps/footers/FooterComp';
 import { CopyrightComp } from '../../comps/footers/CopyrightComp';
 

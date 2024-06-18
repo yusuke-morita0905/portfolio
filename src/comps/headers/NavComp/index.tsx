@@ -23,7 +23,7 @@ export const NavComp: React.FC<Props> = (p) => {
               key={v.item.cd}
               $isSp={isSp}
             >
-              <a href={`#${v.item.link}`}>{v.item.title}</a>
+              <Link href={`#${v.item.link}`}>{v.item.title}</Link>
             </Item>
           ))}
         </List>
@@ -33,7 +33,7 @@ export const NavComp: React.FC<Props> = (p) => {
 };
 
 const Header = styled.header<{ $isSp: boolean }>`
-  padding: ${(p) => (p.$isSp ? '5vw 0vw 0' : '2.4vw 0 ')};
+  padding: ${(p) => (p.$isSp ? '5vw 0 0' : '2.4vw 0 ')};
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +49,7 @@ const List = styled.ul<{ $isSp: boolean }>`
   display: flex;
   justify-content: center;
   gap: ${(p) => (p.$isSp ? '5vw' : '1.5vw')};
-  font-size: ${(p) => (p.$isSp ? 'calc(10vw / 3.75)' : 'calc(20vw / 19.2)')};
+  font-size: ${(p) => (p.$isSp ? 'calc(12vw / 3.2)' : 'calc(20vw / 19.2)')};
 `;
 
 const Item = styled.li<{ $isSp: boolean }>`
@@ -77,3 +77,5 @@ const Item = styled.li<{ $isSp: boolean }>`
     }
   }}
 `;
+
+const Link = styled.a``;

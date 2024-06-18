@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 type Props = {
   mainText: string;
@@ -45,14 +45,14 @@ const FirstViewInner = styled.div<{$isSp: boolean}>`
   position: absolute;
   top: 0;
   left: 0;
-  bottom: ${p => p.$isSp ? 'calc(40vw / 37.5)' : '0'};
+  bottom: 0;
   right: 0;
   margin: auto;
   height: 4.8vh;
 `;
 
 const Title = styled.h1<{$isSp: boolean}>`
-  font-size: ${p => p.$isSp ? 'calc(25vw / 3.75)' : 'calc(52vw / 19.2)'};
+  font-size: ${p => p.$isSp ? 'calc(25vw / 3.2)' : 'calc(52vw / 19.2)'};
   font-family: 'Inter', sans-serif;
   letter-spacing: ${p => p.$isSp ? '0.02vw' : '0.15vw'};
   width: fit-content;

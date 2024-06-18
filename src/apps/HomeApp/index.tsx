@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAppSelector } from '../../redux/store';
-import { mediaQuery, useMediaQuery, bgPath, ShowImage } from '../../modules/lib';
+import { mediaQuery, useMediaQuery } from '../../modules/lib';
 import { HomeComp } from '../../comps/home/HomeComp';
 import { WorksComp } from '../../comps/home/WorksComp';
 import { AboutComp } from '../../comps/home/AboutComp';

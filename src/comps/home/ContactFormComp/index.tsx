@@ -32,7 +32,7 @@ const Container = styled.section<{ $isSp: boolean }>`
 `;
 
 const Title = styled.h2<{ $isSp: boolean }>`
-  font-size: ${(p) => (p.$isSp ? 'calc(20vw / 3.75)' : 'calc(40vw / 19.2)')};
+  font-size: ${(p) => (p.$isSp ? 'calc(23vw / 3.2)' : 'calc(40vw / 19.2)')};
   text-align: center;
   font-family: 'Inter', sans-serif;
   position: relative;
@@ -62,9 +62,9 @@ const Title = styled.h2<{ $isSp: boolean }>`
 `;
 
 const Input = styled.input<{ $isSp: boolean }>`
-  width: ${(p) => (p.$isSp ? 'calc(2450vw / 37.5)' : 'calc(400vw / 19.2)')};
+  width: ${(p) => (p.$isSp ? 'calc(245vw / 3.2)' : 'calc(400vw / 19.2)')};
   display: block;
-  margin: 0 auto ${(p) => (p.$isSp ? 'calc(400vw / 37.5)' : 'calc(100vw / 19.2)')};;
+  margin: 0 auto ${(p) => (p.$isSp ? 'calc(40vw / 3.2)' : 'calc(100vw / 19.2)')};;
   font-size: ${(p) => (p.$isSp ? 'calc(16vw / 3.75)' : 'calc(25vw / 19.2)')};
   text-align: center;
   font-family: 'Inter', sans-serif;

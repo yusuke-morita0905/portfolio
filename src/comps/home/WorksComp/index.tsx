@@ -71,7 +71,7 @@ const Container = styled.section<{ $isSp: boolean }>`
 `;
 
 const Title = styled.h2<{ $isSp: boolean }>`
-  font-size: ${(p) => (p.$isSp ? 'calc(20vw / 3.75)' : 'calc(40vw / 19.2)')};
+  font-size: ${(p) => (p.$isSp ? 'calc(23vw / 3.2)' : 'calc(40vw / 19.2)')};
   text-align: center;
   font-family: 'Inter', sans-serif;
   position: relative;
@@ -134,7 +134,7 @@ const ImageBlock = styled.div<{ $isSp: boolean }>`
 const Caption = styled.div<{ $isSp: boolean }>``;
 
 const CaptionTitle = styled.h3<{ $isSp: boolean }>`
-  font-size: ${(p) => (p.$isSp ? 'calc(16vw / 3.75)' : 'calc(23vw / 19.2)')};
+  font-size: ${(p) => (p.$isSp ? 'calc(16vw / 3.2)' : 'calc(23vw / 19.2)')};
   margin-bottom: ${(p) => (p.$isSp ? '3.3vw' : '0.8vw')};
   line-height: 1.4;
   font-weight: 500;
@@ -142,7 +142,7 @@ const CaptionTitle = styled.h3<{ $isSp: boolean }>`
 `;
 
 const CaptionText = styled.div<{ $isSp: boolean }>`
-  font-size: ${(p) => (p.$isSp ? 'calc(12vw / 3.75)' : 'calc(18vw / 19.2)')};
+  font-size: ${(p) => (p.$isSp ? 'calc(12vw / 3.2)' : 'calc(18vw / 19.2)')};
   line-height: 2;
   letter-spacing: 0.03vw;
 `;

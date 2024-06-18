@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { mediaQuery, useMediaQuery, bgPath, ShowImage } from '../../modules/lib';
+import React from 'react';
+import { mediaQuery, useMediaQuery } from '../../modules/lib';
 import { HeaderComp } from '../../comps/headers/HeaderComp';
 import { NavComp } from '../../comps/headers/NavComp';
 import { FirstViewComp } from '../../comps/headers/FirstViewComp';
@@ -37,12 +37,18 @@ const Nav: nav = [
 ];
 
 export const HeaderApp: React.FC = () => {
-  const isSp:boolean = useMediaQuery(mediaQuery.sp);
+  const isSp: boolean = useMediaQuery(mediaQuery.sp);
 
   return (
     <HeaderComp isSp={isSp}>
-      <NavComp nav={Nav} isSp={isSp}/>
-      <FirstViewComp mainText="Morita Yusuke's Portfolio" isSp={isSp} />
+      <NavComp
+        nav={Nav}
+        isSp={isSp}
+      />
+      <FirstViewComp
+        mainText="Morita Yusuke's Portfolio"
+        isSp={isSp}
+      />
     </HeaderComp>
   );
 };
